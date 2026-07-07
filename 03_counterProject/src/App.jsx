@@ -10,10 +10,8 @@ function App() {
 
   const increaseValue = () => {
 
-    counter = counter + 1
-
-    if (counter <= 20) {
-      setCounter(counter)
+    if (counter < 20) {
+      setCounter(counter + 1)
       console.log("clicked", counter)
     }
 
@@ -21,11 +19,8 @@ function App() {
 
   const decreaseValue = () => {
 
-    counter = counter - 1
-
-    if (counter >= 0) {
-      setCounter(counter)
-      console.log("clicked", counter)
+    if (counter > 0) {
+      setCounter(counter - 1)
     }
 
   }
