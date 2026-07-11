@@ -4,7 +4,7 @@ function Card({ username, btnText = "fallback value"}) {
     console.log(username)
     return (
 
-        < div className="relative h-[400px] w-[300px] rounded-md overflow-hidden shadow-xl" >
+        < div className="relative h-100 w-75 rounded-md overflow-hidden shadow-xl" >
             <img
                 src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
                 alt="AirMax Pro"
@@ -12,7 +12,7 @@ function Card({ username, btnText = "fallback value"}) {
             />
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent"></div>
 
             {/* Card Content */}
             <div className="absolute bottom-4 left-4 text-left pr-4">
